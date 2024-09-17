@@ -64,8 +64,9 @@ def add_to_cart(cart, product, quantity):
 def display_cart(cart):
     total = 0
     for product, price, quantity in cart:
-        total += price * quantity
-        print(f"{product} - ${price} x {quantity} = ${price}")
+        cost = price * quantity
+        total += cost
+        print(f"{product} - ${price} x {quantity} = ${cost}")
     print(f"Total cost: ${total}")
     return total
 
